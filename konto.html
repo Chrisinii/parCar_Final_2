@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Konto</title>
+
+    <link rel="stylesheet" href="css/konto.css">
+
+</head>
+<body>
+    <header>
+        <img class="Logo" src="images/logoweiss.png" alt="logo">
+        <div class="btnheader">
+            <a href="index.html"><button class="Startseite">Startseite</button></a>
+            <button onclick="logout()" class="Logout">Logout</button>
+        </div>
+    </header>
+    
+    <h1>Mein Konto</h1>
+    <div id="meinKonto" onload="displayUser()">
+     
+
+        <div id="liste-user">
+
+        </div>
+
+        <a href="updatekonto.html"><button class="update">Konto aktualisieren</button></a> <br><br>
+        <button id="konto-loeschen" onclick="loescheKonto()">Konto löschen</button>
+
+    <h2>Meine Parkplätze</h2>
+
+        
+        <div id="liste-pp"></div>
+        <br>
+        <a href="ppreg.html"><button id="ppreg">Parkplatz erfassen</button></a> 
+
+    <h2>Meine Buchungen</h2>
+
+        <!--Abfragen was für Parkplätze diese UserID gebucht hat-->
+
+        <button class="hidden" id="buchung-loeschen" onclick="loescheBuchung()">Löschen</button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+
+    <script src="js/konto.js"></script>
+    <script src="js/logout.js"></script>
+</body>
+</html>

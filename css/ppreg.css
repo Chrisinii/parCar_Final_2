@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(50, 50, 50);
+    margin-left: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 150px;
+    padding-left: 150px;
+    
+}
+
+img {
+    width: 300px;
+}
+
+.btnheader {
+    float:right;
+    margin-left: 100px;
+    
+}
+
+button {
+    background-color:#8ecae6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+  
+}
+
+h1, h2 {
+    text-align: center;   
+}
+
+#ppform, #startdatum, #enddatum {
+    text-align: center;  
+     
+}
+
+#startdatum, #enddatum {
+    width: 200px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.erstekolone{
+    text-align: center;
+}
+
+#strasse, #plz, #ort {
+    width: 250px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.btnerfassen{
+    background-color:#8ecae6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+
+    <link rel="stylesheet" href="css/registrierung.css">
+</head>
+<body>
+    <header>
+        <img class="Logo" src="images/logoweiss.png" alt="logo">
+        <div class="btnheader">
+            <a href="index.html"><button class="home">Startseite</button></a>
+            <a href="login.html"><button class="login">Login</button></a>
+        </div>
+    </header>
+
+    <h1>Registrierung</h1>
+    <div class="erstekolone">
+        <h2>Person</h2>
+        <form id="registrieren" action="javascript:registrieren()">
+            <input required id="vname" type="text" name="vorname" placeholder="Vorname"><br><br>
+            <input required id="nname" type="text" name="nachname" placeholder="Nachname"><br><br>
+            <input required id="mail" type="email" name="Email" placeholder="E-Mail"> <br><br>
+            <input required id="password" type="password" name="password" placeholder="Passwort"><br><br>
+            <input required id="fznr" type="text" name="fznr" placeholder="Fahrzeugkennzeichen"><br><br>
+            <h2>Bankverbindung</h2>
+            <input required id="iban" type="text" name="iban" placeholder="IBAN">
+            <p class="kommentar">Für vermietete Parkplätze</p>
+            <input class="btnregistrieren" type="submit" value="registrieren">
+            <!-- <button onclick="registrieren()">Registrieren </button> -->
+        </form>
+    </div>
+    
+    <p id="nachricht"> </p>
+
+    <script src="js/registrierung.js"></script>
+</body>
+</html>

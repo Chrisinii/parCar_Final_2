@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        
+            <img class="Logo" src="images/logoweiss.png" alt="logo">
+            <div class="btnheader">
+                <a href="login.html"><button id="login">Login</button></a>
+                <a href="registrierung.html"><button id="registrierung">Registrierung</button></a>
+                <a href="konto.html"><button id="konto">Mein Konto</button></a>
+            </div>
+         <!-- <div id="btn"></div>  -->
+       
+        
+    </header>
+
+
+        <h1>Willkommen auf parCar</h1>
+
+        <h2>Hallo <span id="vname"></span> </h2>
+
+        <h3>Filter:</h3>
+
+    <div class="searchbar">
+
+        <!-- <input id="ort" type="text" name="ort" placeholder="Ort"> <br><br> -->
+
+        <input required id="plz" type="text" name="plz" placeholder="PLZ" value=""><br><br><br>
+
+        <label for="">Startdatum:</label>
+        <input required type="date" id="startdatum" name="coding" 
+            value="2023-01-01" min="2023-01-01" 
+            max="2099-12-15">
+            <br><br>
+        <label for="">Enddatum:</label> 
+       
+        <input required type="date" id="enddatum" name="coding" 
+            value="2023-01-01" min="2023-01-01" 
+            max="2099-12-15"> <br><br>
+
+         <button onclick="suchePP(document.getElementById('plz').value, document.getElementById('startdatum').value, document.getElementById('enddatum').value)"> suchen </button>
+            <br><br><br>
+    </div>
+       
+    
+
+    <div id="liste-pp">
+
+    
+</div>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

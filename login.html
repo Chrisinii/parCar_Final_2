@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <img class="Logo" src="images/logoweiss.png" alt="logo">
+        <div class="btnheader">
+            <a href="index.html"><button class="home">Startseite</button></a>
+            <a href="registrierung.html"><button class="registrierung">Registrierung</button></a>
+        </div>
+    </header>
+
+    <h1>Login</h1>
+    <div class="anmelden">
+        <h2>Anmelden</h2>
+            <input required id="mail" type="email" name="Email" placeholder="E-Mail"> <br><br>
+            <input required id="password" type="password" name="password" placeholder="Passwort"><br><br>
+            <button onclick="login()"> Login </button>
+            <!-- <button onclick="registrieren()">Registrieren </button> -->
+    </div>
+    
+    <p id="nachricht"> </p>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
